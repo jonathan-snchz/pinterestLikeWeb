@@ -1,0 +1,36 @@
+
+.textButton{
+    cursor: pointer;
+    border-radius: 35px;
+    color: black;
+    font-size: larger;
+    background-color: white;
+    padding: 15px 20px;
+    border: none;
+    transition: all 0.5s;
+}
+.textButton:hover{
+    background-color: black;
+    color: white;
+}
+.redTextButton{
+    cursor: pointer;
+    border-radius: 35px;
+    font-size: larger;
+    padding: 15px 20px;
+    border: none;
+    transition: all 0.5s;
+    background-color: red;
+    color: white;
+}
+.iconButton{
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    
+}
+.iconButton img{
+    width: 40px;
+    height: 40px;
+}

@@ -1,0 +1,36 @@
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-direction: row;
+    height: 100px;
+    padding: 10px 1%;
+}
+.searchBar{
+    width: 50%;
+    height: 50%;
+    border-radius: 25px;
+    font-size: large;
+    padding: 10px;
+}
+.hide{
+        display: block;
+    }
+@media (max-width: 1100px){
+    header {
+        justify-content: space-around;
+    }
+    header input{
+        width: 80%;
+    }
+    .textButton, .comments, .notis{
+        display: none;
+    }
+    
+}
+@media (max-width: 650px){
+    header input {
+        width: 60%;
+    }
+}
