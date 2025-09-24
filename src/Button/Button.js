@@ -1,6 +1,7 @@
 import './Button.css';
 
 export const Button = ({text = "Ejemplo", fnc = () => {}, type = "textButton"} = {}) => {
+    
     const button = document.createElement("button");
 
     button.classList.add(type);
@@ -16,3 +17,4 @@ export const Button = ({text = "Ejemplo", fnc = () => {}, type = "textButton"} =
 
     return button;
 }
+

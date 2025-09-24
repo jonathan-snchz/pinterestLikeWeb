@@ -1,27 +1,35 @@
-
+:root{
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
+    --red: rgb(244, 27, 27);
+    --fontSize: larger;
+    --transition: all 0.5s;
+    --padding: 15px 20px;
+    --borderRadius: 35px;
+}
 .textButton{
     cursor: pointer;
-    border-radius: 35px;
-    color: black;
-    font-size: larger;
-    background-color: white;
-    padding: 15px 20px;
+    border-radius: var(--borderRadius);
+    color: var(--black);
+    font-size: var(--fontSize);
+    background-color: var(--white);
+    padding: var(--padding);
     border: none;
-    transition: all 0.5s;
+    transition: var(--transition);
 }
 .textButton:hover{
-    background-color: black;
-    color: white;
+    background-color: var(--black);
+    color: var(--white);
 }
 .redTextButton{
     cursor: pointer;
-    border-radius: 35px;
-    font-size: larger;
-    padding: 15px 20px;
+    border-radius: var(--borderRadius);
+    font-size: var(--fontSize);
+    padding: var(--padding);
     border: none;
-    transition: all 0.5s;
-    background-color: red;
-    color: white;
+    transition: var(--transition);
+    background-color: var(--red);
+    color: var(--white);
 }
 .iconButton{
     cursor: pointer;
