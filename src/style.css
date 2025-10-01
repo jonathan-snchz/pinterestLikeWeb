@@ -3,7 +3,20 @@
     margin: 0;
     box-sizing: border-box;
 }
- 
+:root{
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
+    --red: rgb(244, 27, 27);
+    --fontSize: larger;
+    --transition: all 0.5s;
+    --padding: 15px 20px;
+    --buttonBorderRadius: 35px;
+    --statsColor: rgba(255, 255, 255, 0.778);
+    --shadowColor: rgba(0, 0, 0, 0.4);
+    --borderRadius: 2rem;
+    --smallGap: 5px;
+    --testBorder: red 1px dashed;
+}
 #app{
     display: flex;
     flex-direction: column;

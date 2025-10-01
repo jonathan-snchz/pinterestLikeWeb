@@ -1,10 +1,3 @@
-:root{
-    --statsColor: rgba(255, 255, 255, 0.778);
-    --shadowColor: rgba(0, 0, 0, 0.4);
-    --borderRadius: 2rem;
-    --smallGap: 5px;
-}
-
 .mainGallery{
     display: grid;
     grid-template-columns: repeat(5, 1fr);

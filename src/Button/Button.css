@@ -1,15 +1,6 @@
-:root{
-    --black: rgb(0, 0, 0);
-    --white: rgb(255, 255, 255);
-    --red: rgb(244, 27, 27);
-    --fontSize: larger;
-    --transition: all 0.5s;
-    --padding: 15px 20px;
-    --borderRadius: 35px;
-}
 .textButton{
     cursor: pointer;
-    border-radius: var(--borderRadius);
+    border-radius: var(--buttonBorderRadius);
     color: var(--black);
     font-size: var(--fontSize);
     background-color: var(--white);
@@ -23,7 +14,7 @@
 }
 .redTextButton{
     cursor: pointer;
-    border-radius: var(--borderRadius);
+    border-radius: var(--buttonBorderRadius);
     font-size: var(--fontSize);
     padding: var(--padding);
     border: none;

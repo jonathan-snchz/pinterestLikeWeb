@@ -16,8 +16,8 @@ export const Header = () => {
         text: "/assets/logoPinterest.png", 
         fnc: () => {
             const gallery = document.querySelector(".mainGallery");
-            loadImages(gallery, true, "home")
-            feedChanger("home")
+            loadImages(gallery, true, "home");
+            feedChanger("home");
         },
         type: "iconButton"});
 
@@ -25,8 +25,8 @@ export const Header = () => {
         text: "Inicio", 
         fnc: () => {
             const gallery = document.querySelector(".mainGallery");
-            loadImages(gallery, true, "home")
-            feedChanger("home")
+            loadImages(gallery, true, "home");
+            feedChanger("home");
         },
         type: "textButton"});
 
@@ -35,7 +35,7 @@ export const Header = () => {
         fnc: () => {
             const gallery = document.querySelector(".mainGallery");
             loadImages(gallery, true, "random");
-            feedChanger("random")
+            feedChanger("random");
         }, 
         type: "textButton"});
 

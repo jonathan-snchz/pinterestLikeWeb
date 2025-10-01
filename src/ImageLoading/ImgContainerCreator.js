@@ -8,6 +8,7 @@ export const imgContainerCreator = (image) => {
     
     const mainImg = document.createElement("img");
     mainImg.src=image.urls.regular;
+    mainImg.alt=image.alt_description;
     mainImg.className = "image";
     
     const stats = document.createElement("div");
