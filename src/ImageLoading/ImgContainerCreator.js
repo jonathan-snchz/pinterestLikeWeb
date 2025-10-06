@@ -33,7 +33,8 @@ export const imgContainerCreator = (image) => {
 
     const pfp = document.createElement("img");
     pfp.className = "pfp";
-    pfp.src =image.user.profile_image.large;
+    pfp.src = image.user.profile_image.large;
+    pfp.alt = `${image.user.username} profile picture`;  
     randomColorBorder(pfp);
     
         // Nombre del autor y la fecha de subida

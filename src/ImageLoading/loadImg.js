@@ -1,4 +1,5 @@
 import { GalleryCall } from '../ApiCalls/apiCalls';
+import { clearDuplicateChecker, duplicateChecker } from './DupesChecker';
 import { imgContainerCreator } from './ImgContainerCreator';
 
 // Contador de páginas
@@ -11,6 +12,7 @@ const resetCounter = (gallery, clearPrevious) => {
     if (clearPrevious === true) {
         gallery.innerHTML = "";
         page = 1;
+        clearDuplicateChecker();
     }
 }
 
@@ -28,8 +30,10 @@ export const loadImages = (gallery, clearPrevious = true, type = "home", searchT
             const images = type === "search" ? data.results : data;
             
             images.forEach(image => {
+                if(!duplicateChecker.has(image.id)){
+                duplicateChecker.add(image.id);
                 const imgContainer = imgContainerCreator(image);
-                gallery.append(imgContainer);
+                gallery.append(imgContainer);}
             });
             page++;
         })

@@ -1,7 +1,7 @@
 import { Button } from './Button/Button.js';
 import { Gallery } from './Gallery/Gallery.js';
 import { Header } from './Header/Header.js';
-import { loadMore } from './ImageLoading/FeedManager.js';
+import { loadMore } from './ImageLoading/feedManager.js';
 import { loadImages } from './ImageLoading/LoadImg.js';
 import './style.css'
 

@@ -1,7 +1,7 @@
 import './Header.css';
 import { Button } from '../Button/Button'
 import { loadImages } from '../ImageLoading/LoadImg';
-import { feedChanger } from '../ImageLoading/FeedManager';
+import { feedChanger } from '../ImageLoading/feedManager';
 
 
 // Crear el header y sus elementos 
@@ -60,6 +60,7 @@ export const Header = () => {
             } else{
                     loadImages(gallery, true, "search", searchText);
                     feedChanger("search", searchText)
+                    searchBar.value = "";
                 }
             }
         });
